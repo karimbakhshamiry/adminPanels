@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="logo__container">
+          <img src="./img/favicon.jpeg" alt="logo" class="logo" />
+          <div>
+            <h2>Solvit!</h2>
+            <span>Programming Gamified</span>
+          </div>
+        </div>
+        <div class="toggle_menu_bar">
+          <span class="bars" id="toggle_menu"></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <aside class="nav" id="nav">
+        <div class="container nav__container navbar">
+          <!-- <h1>Admin Panel</h1> -->
+          <p data-id="dashboard" class="nav__link selected dashboard">
+            Dashboard
+          </p>
+          <p data-id="challenge" class="nav__link challenges">Challenges</p>
+          <p data-id="new_challenges" class="nav__link new_challenges">
+            Add new challenges
+          </p>
+          <p data-id="users" class="nav__link users">Users</p>
+          <p class="nav__link">Logout</p>
+        </div>
+      </aside>
+      <div class="container main__container">
+        <div class="section__div visible" id="dashboard">
+          <div class="statistics">
+            <div class="users">
+              <p><span>+100000</span> users</p>
+            </div>
+
+            <div class="challenges">
+              <p><span>50000</span> challenges</p>
+            </div>
+
+            <div class="solved">
+              <p><span>249</span>challenges solved today</p>
+            </div>
+          </div>
+
+          <div class="top__players">
+            <h2>TOP PLAYERS</h2>
+            <div>
+              <div class="player">
+                <img src="./img/avatar1.jpg" alt="avatar1" />
+                <span class="username"><a href="">@olsen01</a></span>
+                <span class="challenges__solved">2000</span>
+                <p>challenges solved</p>
+              </div>
+
+              <div class="player">
+                <img src="./img/avatar2.jpg" alt="avatar2" />
+                <span class="username"><a href="">@j!mmy</a></span>
+                <span class="challenges__solved">1980</span>
+                <p>challenges solved</p>
+              </div>
+
+              <div class="player">
+                <img src="./img/avatar3.jpg" alt="avatar3" />
+                <span class="username"><a href="">@einstein.v2</a></span>
+                <span class="challenges__solved">1680</span>
+                <p>challenges solved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__div" id="challenge">
+          <div class="statistics">
+            <div>
+              <p><span class="total">50000</span> total challenges</p>
+            </div>
+
+            <div>
+              <p><span class="solved">10125</span> solved</p>
+            </div>
+
+            <div>
+              <p><span class="today">5492</span> solved</p>
+            </div>
+          </div>
+
+          <div class="challenge__list">
+            <h2>Challenges</h2>
+            <div>
+              <div class="challenge challenge__heading">
+                <p class="id">ID</p>
+                <p class="name">Name</p>
+                <p class="rating">Rating</p>
+                <p class="solutions">Total solutions submitted</p>
+              </div>
+
+              <div class="challenge">
+                <p class="id">1</p>
+                <p class="name">Pilling Cube</p>
+                <p class="rating">400</p>
+                <p class="solutions">402</p>
+              </div>
+
+              <div class="challenge">
+                <p class="id">1</p>
+                <p class="name">Pilling Cube</p>
+                <p class="rating">400</p>
+                <p class="solutions">402</p>
+              </div>
+
+              <div class="challenge">
+                <p class="id">1</p>
+                <p class="name">Pilling Cube</p>
+                <p class="rating">400</p>
+                <p class="solutions">402</p>
+              </div>
+
+              <div class="challenge">
+                <p class="id">1</p>
+                <p class="name">Pilling Cube</p>
+                <p class="rating">400</p>
+                <p class="solutions">402</p>
+              </div>
+
+              <div class="challenge">
+                <p class="id">1</p>
+                <p class="name">Pilling Cube</p>
+                <p class="rating">400</p>
+                <p class="solutions">402</p>
+              </div>
+
+              <div class="challenge">
+                <p class="id">1</p>
+                <p class="name">Pilling Cube</p>
+                <p class="rating">400</p>
+                <p class="solutions">402</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section__div" id="new_challenges">
+          <h2>Add new challenge</h2>
+          <form action="">
+            <div class="form__element">
+              <label for="title">Challenge title</label>
+              <input type="text" name="title" id="title" required />
+            </div>
+
+            <div class="form__element">
+              <label for="rating">Challenge rating</label>
+              <input
+                type="number"
+                name="rating"
+                id="rating"
+                min="100"
+                max="1000"
+                required
+              />
+            </div>
+
+            <div class="form__element">
+              <label for="description">Challenge description</label>
+              <textarea
+                type="text"
+                name="description"
+                id="description"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form__element">
+              <label for="img__description">Image</label>
+              <input
+                type="file"
+                name="img__description"
+                id="img__description"
+              />
+            </div>
+
+            <div class="form__element">
+              <label for=""></label>
+              <button>Add</button>
+            </div>
+          </form>
+        </div>
+        <div class="section__div" id="users">
+          <div class="statistics">
+            <div class="users">
+              <p><span>+100000</span> users</p>
+            </div>
+
+            <div>
+              <p><span>24897</span> active users</p>
+            </div>
+
+            <div>
+              <p><span>2413</span> joined this week</p>
+            </div>
+          </div>
+
+          <div class="user__list">
+            <h2>All Users</h2>
+            <div>
+              <div class="user__list_heading user__list_user">
+                <p class="id">ID</p>
+                <p class="username">Username</p>
+                <p class="country">Country</p>
+                <p class="ranking">Rank</p>
+                <p class="solved__challenges">Solved challenges</p>
+              </div>
+
+              <div class="user__list_user">
+                <p class="id">1</p>
+                <p class="username"><a href="">@olsen01</a></p>
+                <p class="country">Albania</p>
+                <p class="ranking">1</p>
+                <p class="solved__challenges">2000</p>
+              </div>
+
+              <div class="user__list_user">
+                <p class="id">1</p>
+                <p class="username"><a href="">@olsen01</a></p>
+                <p class="country">Albania</p>
+                <p class="ranking">1</p>
+                <p class="solved__challenges">2000</p>
+              </div>
+
+              <div class="user__list_user">
+                <p class="id">1</p>
+                <p class="username"><a href="">@olsen01</a></p>
+                <p class="country">Albania</p>
+                <p class="ranking">1</p>
+                <p class="solved__challenges">2000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">copyright 2022&copy;</div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
