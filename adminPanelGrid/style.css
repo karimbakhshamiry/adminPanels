@@ -439,6 +439,11 @@ button:hover {
     left: -50%;
   }
 
+  .nav__container {
+    align-items: stretch;
+    justify-content: stretch;
+    text-align: left;
+  }
   .showNavBar {
     display: block;
     position: fixed;

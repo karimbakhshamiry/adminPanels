@@ -423,6 +423,7 @@ button:hover {
 .footer {
   display: flex;
   justify-content: center;
+  padding: 1em;
   align-items: center;
   bottom: 0;
   width: 100vw;
@@ -452,7 +453,6 @@ button:hover {
 
   .nav__container {
     align-items: flex-start;
-    position: fixed;
     align-items: stretch;
   }
 
